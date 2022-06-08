@@ -12,7 +12,7 @@ it will also print to the terminal the time, whether it sends a keystroke (indic
 
 ### example output
 
-```sh
+```text
 $ ./cronch.sh
 
 CRONCH will exit after 12 hours (43200 seconds)
@@ -39,7 +39,7 @@ key=60                   # {keycode} - keycode to send (60 is right shift)
 
 you can also specify `scriptTimeoutHours` as an argument. for example:
 
-```sh
+```text
 $ ./cronch.sh 3
 
 CRONCH will exit after 3 hours (10800 seconds)
