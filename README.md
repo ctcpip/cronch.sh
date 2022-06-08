@@ -14,6 +14,9 @@ it will also print to the terminal the time, whether it sends a keystroke (indic
 
 ```sh
 $ ./cronch.sh
+
+CRONCH will exit after 12 hours (43200 seconds)
+
 Tue May 31 12:12:48 CDT 2022 -- NO CRONCH -- 0
 Tue May 31 12:13:47 CDT 2022 -- NO CRONCH -- 42
 Tue May 31 12:14:46 CDT 2022 -- NO CRONCH -- 101
@@ -32,6 +35,14 @@ modify the variables at the top of the script to your liking:
 idleTimeoutMinutes=3     # {minutes} - how long to wait before sending keystroke to prevent sleep (and reset idle time (HIDIdleTime))
 scriptTimeoutHours=12    # {hours} - when to stop running as a failsafe in case we forgot to stop this script manually
 key=60                   # {keycode} - keycode to send (60 is right shift)
+```
+
+you can also specify `scriptTimeoutHours` as an argument. for example:
+
+```sh
+$ ./cronch.sh 3
+
+CRONCH will exit after 3 hours (10800 seconds)
 ```
 
 ## but why?
