@@ -15,7 +15,7 @@ it will also print to the terminal the time, whether it sends a keystroke (indic
 ```text
 $ ./cronch.sh
 
-CRONCH will exit after 12 hours (43200 seconds)
+CRONCH will exit after 12 hours at Wed Jul 20 21:53:04 CDT 2022
 
 Tue May 31 12:12:48 CDT 2022 -- NO CRONCH -- 0
 Tue May 31 12:13:47 CDT 2022 -- NO CRONCH -- 42
@@ -42,7 +42,7 @@ you can also specify `scriptTimeoutHours` as an argument. for example:
 ```text
 $ ./cronch.sh 3
 
-CRONCH will exit after 3 hours (10800 seconds)
+CRONCH will exit after 3 hours at Wed Jul 20 12:53:18 CDT 2022
 ```
 
 ## but why?

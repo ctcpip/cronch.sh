@@ -13,8 +13,11 @@ fi
 idleTimeout=$(echo "$idleTimeoutMinutes * 60" | bc)
 end=$(echo "$scriptTimeoutHours * 60 * 60 / 1" | bc)
 
+# date command works differently between bsd/linux/mac
+endDate=$(date -d "+${end}Seconds" 2>/dev/null || date -v "+${end}S")
+
 echo
-echo "CRONCH will exit after $scriptTimeoutHours hours ($end seconds)"
+echo "CRONCH will exit after $scriptTimeoutHours hours at $endDate"
 echo
 
 while [ $SECONDS -lt "$end" ]
